@@ -1,0 +1,159 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Стилізація контейнера за допомогою Flexbox */
+.container {
+  display: flex;
+  justify-content: space-around; /* Простір між блоками */
+  align-items: center;           /* Вертикальне вирівнювання */
+  padding: 20px;
+}
+
+/* Стилізація блоків (демонстрація Box Model) */
+.box {
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+/* Медіа-запит для адаптивності */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Вертикальне розташування для менших екранів */
+  }
+}
+
+/* Базові стилі для фото в блоках */
+.box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* --- Медіа-запити --- */
+
+/* 1. Планшет (ширина < 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        justify-content: space-evenly;
+    }
+    .box {
+        width: 40%; /* По 2 блоки в ряд */
+    }
+}
+
+/* 2. Мобільна версія (ширина < 600px) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .box {
+        width: 90%;             /* Блоки на всю ширину */
+        background-color: #34495e; /* Зміна кольору заливки (темний) */
+        color: #ffffff;         /* Колір тексту для контрасту */
+        margin: 10px 0;
+    }
+
+    /* Зміна шрифту та його розміру */
+    .box h3 {
+        font-family: 'Courier New', monospace; 
+        font-size: 1.5rem;
+    }
+    
+    .box p {
+        font-size: 0.9rem;
+    }
+}
+/* Базові налаштування */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6fa; /* Світло-фіолетовий фон */
+}
+
+header, footer {
+    background-color: #5cb85c; /* Зелений колір */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Контейнер Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Дозволяє переносити блоки */
+    justify-content: center; /* Вирівнювання по центру */
+    padding: 40px 20px;
+    gap: 30px; /* Відступи між блоками */
+}
+
+/* Стиль картки (Box Model) */
+.box {
+    background-color: white;
+    border: 1px solid #000;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.box img {
+    width: 180px;
+    height: 150px;
+    border: 1px solid #000;
+    object-fit: cover;
+}
+
+.box p {
+    font-size: 14px;
+    color: #333;
+    padding: 10px 5px;
+}
+
+/* --- Адаптивність (Медіа-запити) --- */
+
+/* Планшет (2 блоки в ряд) */
+@media (max-width: 1024px) {
+    .box {
+        width: 35%;
+    }
+}
+
+/* Мобільна версія (згідно з вашими умовами) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 85%;
+        background-color: #f9f9f9; /* Зміна кольору заливки */
+        border: 2px solid #5cb85c; /* Зелена рамка */
+    }
+
+    .box p {
+        font-family: 'Courier New', monospace; /* Зміна шрифту */
+        font-size: 18px; /* Зміна розміру */
+        font-weight: bold;
+    }
+}
