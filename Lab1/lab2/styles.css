@@ -138,7 +138,7 @@ header, footer {
     }
 }
 
-/* Мобільна версія (згідно з вашими умовами) */
+/* Мобільна версія  */
 @media (max-width: 600px) {
     .container {
         flex-direction: column;
