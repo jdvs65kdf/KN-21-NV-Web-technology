@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 4: Вступ до JavaScript</title>
+</head>
+<body>
+
+    <h1>Лабораторна робота 4: Вступ до JavaScript</h1>
+
+    <script>
+        // Завдання 1: Привітання користувача
+        console.log("Завдання 1.");
+        const userName = prompt("Будь ласка, введіть ваше ім'я:");
+        const greeting = `Привіт, ${userName}! Радий тебе бачити!`;
+        
+        alert(greeting);
+        console.log(greeting);
+
+
+        // Завдання 2: Проста арифметика
+        console.log("Завдання 2.");
+        // Перетворюємо введені рядки у числа за допомогою Number()
+        const num1 = Number(prompt("Введіть перше число:"));
+        const num2 = Number(prompt("Введіть друге число:"));
+
+        // Варіант 4 — парне число, тому обчислюємо суму та різницю
+        const sum = num1 + num2;
+        const difference = num1 - num2;
+        const arithmeticResult = `Сума: ${sum}, Різниця: ${difference}`;
+
+        alert(arithmeticResult);
+        console.log(arithmeticResult);
+
+
+        // Завдання 3: Вік користувача
+        console.log("Завдання 3.");
+        const birthYear = Number(prompt("Введіть ваш рік народження:"));
+        const currentYear = 2026;
+        const userAge = currentYear - birthYear;
+
+        // Константа віку (наприклад, 19 років)
+        const myAge = 19; 
+        const ageDiff = Math.abs(userAge - myAge);
+        
+        let comparisonMessage = "";
+
+        if (userAge > myAge) {
+            comparisonMessage = `Користувач старший на ${ageDiff} років.`;
+        } else if (userAge < myAge) {
+            comparisonMessage = `Користувач молодший на ${ageDiff} років.`;
+        } else {
+            comparisonMessage = "Ми з користувачем однолітки!";
+        }
+
+        const finalAgeMessage = `Ваш поточний вік: ${userAge}. ${comparisonMessage}`;
+        
+        alert(finalAgeMessage);
+        console.log(finalAgeMessage);
+
+    </script>
+</body>
+</html>

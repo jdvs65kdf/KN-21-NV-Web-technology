@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #e7e7e7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.new-element {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #fafafa;
+}
+
+/* Клас для зміни стилю через JS */
+.highlight {
+    background-color: #ffeb3b;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
