@@ -1,0 +1,71 @@
+/* Завдання 1: Плавна зміна та клік */
+.button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Плавна зміна кольору за 0.5s */
+    transition: background-color 0.5s ease, transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #2ecc71;
+}
+
+.button:active {
+    /* Ефект зміни розміру при кліку */
+    transform: scale(0.9);
+}
+
+/* Завдання 2: Розгортання тексту */
+.content-wrapper {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    /* Плавне розгортання */
+    transition: max-height 0.6s ease-out;
+}
+
+.content-wrapper:hover .content {
+    max-height: 200px; /* Достатня висота для контенту */
+}
+
+/* Завдання 3: Рух блоку вліво-вправо */
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #e74c3c;
+    position: relative;
+    animation: moveLeftRight 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveLeftRight {
+    from { left: 0; }
+    to { left: 200px; }
+}
+
+/* Індивідуальне завдання (N=4) */
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #9b59b6;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+    /* transition-duration: (4 % 5) * 0.3s = 1.2s */
+    transition: left 0.8s ease, background-color 1.2s ease;
+}
+
+.circle.move {
+    left: 300px;
+}
