@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-візитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Ім’я Прізвище</h1>
+            <p>Моя професія: Web-розробник</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#skills">Навички</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>Про мене</h2>
+            <p>Я навчаюсь на другому курсі університету, на спеціальності Комп'ютерні науки.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Мої навички</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Зв'язатися зі мною</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше ім'я" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Повідомлення" rows="4" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ім’я Прізвище. Всі права захищені.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
